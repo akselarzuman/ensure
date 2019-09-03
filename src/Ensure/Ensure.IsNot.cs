@@ -4,7 +4,7 @@ namespace Chuck
 {
     public static partial class Ensure
     {
-        public static void Requires<TException>(bool condition) where TException : Exception
+        public static void IsNot<TException>(bool condition) where TException : Exception
         {
             if (condition)
             {
@@ -13,7 +13,7 @@ namespace Chuck
             }
         }
 
-        public static void Requires<TException>(bool condition, string userMessage) where TException : Exception
+        public static void IsNot<TException>(bool condition, string userMessage) where TException : Exception
         {
             if (condition)
             {
