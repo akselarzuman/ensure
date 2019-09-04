@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <LangVersion>7.2</LangVersion>
     <TargetFrameworks>netstandard2.0;netstandard1.6;netstandard1.3</TargetFrameworks>
     <RootNamespace>EnsureDotnet</RootNamespace>
     <AssemblyName>EnsureDotnet</AssemblyName>
