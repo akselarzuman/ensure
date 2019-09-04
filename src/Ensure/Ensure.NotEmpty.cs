@@ -6,7 +6,7 @@ namespace EnsureDotnet
 {
     public static partial class Ensure
     {
-        public static void ArgumentNotNullOrEmptyString(string value, string name)
+        public static void ArgumentNotNullOrEmptyString(in string value, in string name)
         {
             ArgumentNotNull(value, name);
 
@@ -18,7 +18,7 @@ namespace EnsureDotnet
             throw new ArgumentException("String cannot be empty", name);
         }
 
-        public static void ArgumentNotNullOrEmptyEnumerable<T>(IEnumerable<T> value, string name)
+        public static void ArgumentNotNullOrEmptyEnumerable<T>(in IEnumerable<T> value, in string name)
         {
             ArgumentNotNull(value, name);
 

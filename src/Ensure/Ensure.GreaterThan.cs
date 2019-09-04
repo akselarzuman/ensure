@@ -4,7 +4,7 @@ namespace EnsureDotnet
 {
     public static partial class Ensure
     {
-        public static void GreaterThanZero(TimeSpan value)
+        public static void GreaterThanZero(in TimeSpan value)
         {
             ArgumentNotNull(value);
 
@@ -15,8 +15,8 @@ namespace EnsureDotnet
 
             throw new ArgumentException("Timespan must be greater than zero");
         }
-        
-        public static void GreaterThanZero(TimeSpan value, string name)
+
+        public static void GreaterThanZero(in TimeSpan value, in string name)
         {
             ArgumentNotNull(value, name);
 
@@ -28,7 +28,7 @@ namespace EnsureDotnet
             throw new ArgumentException("Timespan must be greater than zero", name);
         }
 
-        public static void GreaterThanZero(short value)
+        public static void GreaterThanZero(in short value)
         {
             if (value > 0)
             {
@@ -37,8 +37,8 @@ namespace EnsureDotnet
 
             throw new ArgumentException("short must be greater than zero");
         }
-        
-        public static void GreaterThanZero(short value, string name)
+
+        public static void GreaterThanZero(in short value, in string name)
         {
             if (value > 0)
             {
@@ -47,8 +47,8 @@ namespace EnsureDotnet
 
             throw new ArgumentException("short must be greater than zero", name);
         }
-        
-        public static void GreaterThanZero(int value)
+
+        public static void GreaterThanZero(in int value)
         {
             if (value > 0)
             {
@@ -57,8 +57,8 @@ namespace EnsureDotnet
 
             throw new ArgumentException("int must be greater than zero");
         }
-        
-        public static void GreaterThanZero(int value, string name)
+
+        public static void GreaterThanZero(in int value, in string name)
         {
             if (value > 0)
             {
@@ -67,8 +67,8 @@ namespace EnsureDotnet
 
             throw new ArgumentException("int must be greater than zero", name);
         }
-        
-        public static void GreaterThanZero(long value)
+
+        public static void GreaterThanZero(in long value)
         {
             if (value > 0)
             {
@@ -77,8 +77,8 @@ namespace EnsureDotnet
 
             throw new ArgumentException("long must be greater than zero");
         }
-        
-        public static void GreaterThanZero(long value, string name)
+
+        public static void GreaterThanZero(in long value, in string name)
         {
             if (value > 0)
             {
@@ -87,8 +87,8 @@ namespace EnsureDotnet
 
             throw new ArgumentException("long must be greater than zero", name);
         }
-        
-        public static void GreaterThanZero(float value)
+
+        public static void GreaterThanZero(in float value)
         {
             if (value > 0)
             {
@@ -97,8 +97,8 @@ namespace EnsureDotnet
 
             throw new ArgumentException("float must be greater than zero");
         }
-        
-        public static void GreaterThanZero(float value, string name)
+
+        public static void GreaterThanZero(in float value, in string name)
         {
             if (value > 0)
             {
@@ -107,8 +107,8 @@ namespace EnsureDotnet
 
             throw new ArgumentException("float must be greater than zero", name);
         }
-        
-        public static void GreaterThanZero(double value)
+
+        public static void GreaterThanZero(in double value)
         {
             if (value > 0)
             {
@@ -117,8 +117,8 @@ namespace EnsureDotnet
 
             throw new ArgumentException("double must be greater than zero");
         }
-        
-        public static void GreaterThanZero(double value, string name)
+
+        public static void GreaterThanZero(in double value, in string name)
         {
             if (value > 0)
             {
@@ -127,8 +127,8 @@ namespace EnsureDotnet
 
             throw new ArgumentException("double must be greater than zero", name);
         }
-        
-        public static void GreaterThanZero(decimal value)
+
+        public static void GreaterThanZero(in decimal value)
         {
             if (value > 0)
             {
@@ -137,8 +137,8 @@ namespace EnsureDotnet
 
             throw new ArgumentException("decimal must be greater than zero");
         }
-        
-        public static void GreaterThanZero(decimal value, string name)
+
+        public static void GreaterThanZero(in decimal value, in string name)
         {
             if (value > 0)
             {

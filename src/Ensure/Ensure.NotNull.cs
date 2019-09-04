@@ -4,7 +4,7 @@ namespace EnsureDotnet
 {
     public static partial class Ensure
     {
-        public static void ArgumentNotNull(object value)
+        public static void ArgumentNotNull(in object value)
         {
             if (value != null)
             {
@@ -14,7 +14,7 @@ namespace EnsureDotnet
             throw new ArgumentNullException();
         }
         
-        public static void ArgumentNotNull(object value, string name)
+        public static void ArgumentNotNull(in object value, in string name)
         {
             if (value != null)
             {

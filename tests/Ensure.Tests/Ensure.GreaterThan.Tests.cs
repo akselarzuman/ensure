@@ -1,7 +1,6 @@
 ﻿using System;
 using Xunit;
 using EnsureDotnet;
-using System.Collections.Generic;
 
 namespace EnsureTests
 {
