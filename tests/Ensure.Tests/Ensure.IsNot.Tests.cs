@@ -1,5 +1,5 @@
 ﻿using System;
-using Chuck;
+using EnsureDotnet;
 using Xunit;
 
 namespace EnsureTests

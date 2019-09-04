@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Chuck
+namespace EnsureDotnet
 {
     public static partial class Ensure
     {

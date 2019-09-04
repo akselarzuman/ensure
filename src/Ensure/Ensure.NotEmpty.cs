@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Chuck
+namespace EnsureDotnet
 {
     public static partial class Ensure
     {
